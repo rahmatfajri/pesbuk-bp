@@ -20,6 +20,8 @@ RUN docker-php-ext-enable xdebug
 
 RUN apt-get -y install libmcrypt-dev
 RUN docker-php-ext-install mcrypt
+RUN apt-get -y install php
+RUN apt-get -y install php-mysql
 
 # RUN apt-get -y install libsqlite3-dev libsqlite3-0 
 RUN apt-get -y install  mysql-client
