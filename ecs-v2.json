@@ -2,7 +2,7 @@
   "containerDefinitions": [
     {
       "name": "server",
-      "image": "081602682094.dkr.ecr.us-east-2.amazonaws.com/lp-web:BUILD_NUMBER",
+      "image": "081602682094.dkr.ecr.us-east-2.amazonaws.com/sigma-pesbuk-web:BUILD_NUMBER",
       "cpu": 0,
       "memory": 128,
       "portMappings": [
