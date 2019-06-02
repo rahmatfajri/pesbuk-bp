@@ -1,0 +1,24 @@
+{
+  "containerDefinitions": [
+    {
+      "name": "server",
+      "image": "081602682094.dkr.ecr.us-east-2.amazonaws.com/lp-web:BUILD_NUMBER",
+      "cpu": 0,
+      "memory": 128,
+      "portMappings": [
+        {
+          "containerPort": 80
+        }
+      ],
+      "dockerLabels" : {
+        "container" : "server",
+        "environment" : "development"
+      },
+      "logConfiguration" : {
+        "logDriver": "json-file",
+        "options": {
+          "labels" : "container,environment"
+        }
+      }
+    }]      
+}
